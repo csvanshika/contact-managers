@@ -22,3 +22,34 @@
     "nodemon": "^3.1.11"
   }
 }
+import Contact from '../models/Contact.js';
+
+
+
+// @desc    Get all contacts for logged-in user
+
+// @route   GET /api/contacts
+
+// @access  Private
+
+const getContacts = async (req, res) => {
+
+  try {
+
+    const contacts = await Contact.find({ userId: req.user._id }).sort({
+
+      createdAt: -1,
+
+    });
+
+
+
+    res.json({ success: true, count: contacts.length, contacts });
+
+  } catch (error) {
+
+    res.status(500).json({ message: error.message });
+
+  }
+
+};
