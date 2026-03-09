@@ -1,28 +1,6 @@
-# contact-managers"name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "compress-json": "^3.4.0",
-    "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "express-validator": "^7.3.1",
-    "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.2.1",
-    "nodemon": "^3.1.11"
-  }
-}
-import Contact from '../models/Contact.js';
+🔗 Contact Manager 
+The Contact Manager project is a simple application used to store and manage contact details such as names, phone numbers, and email addresses. The main purpose of this project is to help users organize their contacts in an easy and efficient way.
+In this system, users can add new contacts, view saved contacts, update existing contact details, and delete contacts when they are no longer needed. This makes it easier to manage personal or professional contact information without using paper records.
 
 
 
