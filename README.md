@@ -25,11 +25,15 @@
 import Contact from '../models/Contact.js';
 
 
+
+
+
+
 Installation
 Clone the repository
 
 git clone https://github.com/Mayankkumar1234/My-LibSpace
-cd My-LibSpace
+cd - contact Manager 
 Install dependencies
 
 [e.g., npm install]
