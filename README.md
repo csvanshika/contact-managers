@@ -7,7 +7,7 @@ In this system, users can add new contacts, view saved contacts, update existing
 
 
 
-Installation
+🔗 Installation
 Clone the repository
 
 git clone https://github.comContact Manager 
@@ -18,8 +18,11 @@ Install dependencies
 Configure Environment Variables
 
 Create a .env file in the root directory.
+
 Add the following variables :
+
 MONGO_URI=your_database_url
+
 PORT = Your server port
 SECRET_KEY= For JWT
 Run the application
