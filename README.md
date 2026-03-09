@@ -25,31 +25,23 @@
 import Contact from '../models/Contact.js';
 
 
+Installation
+Clone the repository
 
-// @desc    Get all contacts for logged-in user
+git clone https://github.com/Mayankkumar1234/My-LibSpace
+cd My-LibSpace
+Install dependencies
 
-// @route   GET /api/contacts
+[e.g., npm install]
+Configure Environment Variables
 
-// @access  Private
+Create a .env file in the root directory.
+Add the following variables :
+MONGO_URI=your_database_url
+PORT = Your server port
+SECRET_KEY= For JWT
+Run the application
 
-const getContacts = async (req, res) => {
-
-  try {
-
-    const contacts = await Contact.find({ userId: req.user._id }).sort({
-
-      createdAt: -1,
-
-    });
+npm run start or node index.js
 
 
-
-    res.json({ success: true, count: contacts.length, contacts });
-
-  } catch (error) {
-
-    res.status(500).json({ message: error.message });
-
-  }
-
-};
