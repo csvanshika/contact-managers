@@ -32,7 +32,7 @@ import Contact from '../models/Contact.js';
 Installation
 Clone the repository
 
-git clone https://github.com/Mayankkumar1234/My-LibSpace
+git clone https://github.comContact Manager 
 cd - contact Manager 
 Install dependencies
 
